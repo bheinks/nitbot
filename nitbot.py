@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import pickle
 from collections import defaultdict
 from pathlib import Path
@@ -71,7 +73,6 @@ class BibleIndex(defaultdict):
         self[index].add(word)
     
     def find(self, word):
-        print(word)
         index = tuple(sorted(word.lower()))
         return self[index]
 

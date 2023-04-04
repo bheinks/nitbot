@@ -25,7 +25,5 @@ pip install nitbot
 ```
 
 ## Usage
-```
-```
 
 ## Examples
