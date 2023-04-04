@@ -51,7 +51,7 @@ class NITBot(discord.Client):
                 content = contractions.fix(message.content)
                 # Exclude !nitb
                 words = ordered_set(WORD_TOKENIZER.tokenize(content)[1:])
-
+            
             not_in_bible = [w for w in words if not self.bible_index.find(w)]
             if len(words) == len(not_in_bible):
                 response = 'None of these words are in the Bible.'
@@ -62,6 +62,10 @@ class NITBot(discord.Client):
             else:
                 response = f"{', '.join(not_in_bible[:-1])} and {not_in_bible[-1]} are not in the Bible."
 
+            # Add cross reaction to message
+            await message.add_reaction('✝️')
+
+            # Reply to message
             await message.reply(response, mention_author=True)
 
 class BibleIndex(defaultdict):
