@@ -79,8 +79,9 @@ class BibleIndex(defaultdict):
         self[index].add(word)
     
     def find(self, word):
-        index = tuple(sorted(word.lower()))
-        return self[index]
+        word = word.lower()
+        index = tuple(sorted(word))
+        return word in self[index]
 
 
 def main():
