@@ -55,6 +55,8 @@ class NITBot(discord.Client):
             not_in_bible = [w for w in words if not self.bible_index.find(w)]
             if len(words) == len(not_in_bible):
                 response = 'None of these words are in the Bible.'
+            elif not not_in_bible:
+                response = 'All of these words are in the Bible.'
             elif len(not_in_bible) == 1:
                 response = f'{not_in_bible[0]} is not in the Bible.'
             elif len(not_in_bible) == 2:
