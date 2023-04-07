@@ -74,7 +74,9 @@ Once running, simply invite the bot to your server and reply to a message with `
 ## Examples
 
 Used in reply:
+
 ![Screenshot of using nitbot in reply to a message with the text: "inspired by a dumb twitter bot, I made an equally dumb discord bot that tells you whether or not the words in a message are in the bible"](assets/screenshots/SCR-20230404-g8t.png)
 
 Used directly:
+
 ![Screenshot of using nitbot directly with the lyrics of 100 gecs' money machine](assets/screenshots/SCR-20230404-g45.png)
