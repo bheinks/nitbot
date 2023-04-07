@@ -1,0 +1,4 @@
+discord-py==2.2.2
+python-decouple==3.8
+nltk==3.8.1
+contractions==0.1.73
