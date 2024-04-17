@@ -56,7 +56,7 @@ Example of a systemd service:
 ```
 [Unit]
 Description=nitbot Discord bot service
-After=multi-user.target
+After=network-online.target
 
 [Service]
 Type=simple
@@ -66,7 +66,7 @@ ExecStart=/path/to/nitbot/nitbot.py
 Environment=DISCORD_TOKEN=...
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=network-online.target
 ```
 
 Once running, simply invite the bot to your server and reply to a message with `!nitb` to analyze the replied-to message, or supply the text to be analyzed following `!nitb` if not in reply.
